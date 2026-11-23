@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/inter.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 24px;
+  background: #0f172a;
+  background-image:
+    radial-gradient(at 0% 0%, #38bdf81c, transparent 55%),
+    radial-gradient(at 100% 100%, #818cf81c, transparent 55%);
+  color: #e2e8f0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contenedor {
+  width: min(760px, 100%);
+  padding: 28px 32px;
+  border: 1px solid #ffffff1a;
+  border-radius: 20px;
+  background: #1e293be6;
+  box-shadow: 0 20px 50px #00000035;
+}
+
+header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.identidad-escolar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.logo-escuela {
+  display: block;
+  width: 54px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.escuela {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.ubicacion {
+  margin: 4px 0 0;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+h1 {
+  margin: 0;
+  background: linear-gradient(135deg, #38bdf8, #a5b4fc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.subtitulo {
+  margin: 10px 0 0;
+  color: #cbd5e1;
+}
+
+.ejercicio {
+  padding: 18px 0;
+  border-top: 1px solid #ffffff14;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #cbd5e1;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+button,
+input,
+select {
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font: inherit;
+}
+
+input,
+select {
+  flex: 1;
+  min-width: 160px;
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+button {
+  background: #38bdf8;
+  color: #082f49;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 160ms;
+}
+
+button:hover {
+  background: #7dd3fc;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #a5b4fc;
+  outline-offset: 3px;
+}
+
+.resultado {
+  margin: 12px 0 0;
+  color: #cbd5e1;
+  overflow-wrap: anywhere;
+}
+
+.detalle {
+  margin: 0 0 12px;
+  color: #cbd5e1;
+}
+
+.lista {
+  white-space: pre-line;
+}
+
+.pie {
+  padding-top: 16px;
+  border-top: 1px solid #ffffff14;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+code {
+  color: #fdba74;
+  font-size: 0.95em;
+}

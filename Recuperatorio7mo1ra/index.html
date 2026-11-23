@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>El combo del recreo · Kiosco escolar</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="ejercicios.js" defer></script>
+  </head>
+  <body>
+    <main class="contenedor">
+      <header>
+        <div class="identidad-escolar">
+          <img
+            class="logo-escuela"
+            src="assets/galileo-oficial.png"
+            alt="Escudo de la E.E.S.T. N.º 5 Galileo Galilei"
+            width="54"
+            height="65"
+          />
+          <div>
+            <p class="escuela">E.E.S.T. N.º 5 «Galileo Galilei»</p>
+            <p class="ubicacion">General San Martín, Buenos Aires, Argentina</p>
+          </div>
+        </div>
+        <h1>El combo del recreo</h1>
+        <p class="subtitulo">Recuperatorio de JavaScript · 7.º año · 2 horas</p>
+      </header>
+
+      <section class="ejercicio" aria-labelledby="titulo-combo">
+        <h2 id="titulo-combo">¿Qué trae el combo?</h2>
+        <button id="ver-combo" type="button">Ver combo</button>
+        <p id="contenido-combo" class="resultado lista" role="status">Consultá los productos que incluye el combo del recreo.</p>
+      </section>
+
+      <section class="ejercicio" aria-labelledby="titulo-total">
+        <h2 id="titulo-total">Calcular el pedido</h2>
+        <p class="detalle">Cada combo cuesta $1.500.</p>
+        <label for="cantidad">Cantidad de combos</label>
+        <div class="fila">
+          <select id="cantidad">
+            <option value="1">1 combo</option>
+            <option value="2">2 combos</option>
+            <option value="3">3 combos</option>
+            <option value="4">4 combos</option>
+            <option value="5">5 combos</option>
+            <option value="6">6 combos</option>
+            <option value="7">7 combos</option>
+            <option value="8">8 combos</option>
+            <option value="9">9 combos</option>
+            <option value="10">10 combos</option>
+          </select>
+          <button id="calcular-total" type="button">Calcular total</button>
+        </div>
+        <p id="total-pedido" class="resultado" role="status">
+          Elegí la cantidad y calculá el total del pedido.
+        </p>
+      </section>
+
+      <section class="ejercicio" aria-labelledby="titulo-cobro">
+        <h2 id="titulo-cobro">Cobrar</h2>
+        <label for="pago">Importe recibido ($)</label>
+        <div class="fila">
+          <input
+            id="pago"
+            type="number"
+            min="0"
+            step="1"
+            placeholder="Ej. 4000"
+          />
+          <button id="cobrar" type="button">Cobrar</button>
+        </div>
+        <p id="resultado-cobro" class="resultado" role="status">
+          Ingresá con cuánto paga el cliente para consultar el vuelto o cuánto
+          falta.
+        </p>
+      </section>
+
+      <section class="ejercicio" aria-labelledby="titulo-entrega">
+        <h2 id="titulo-entrega">Preparar la entrega</h2>
+        <label for="nombre">Nombre del cliente</label>
+        <div class="fila">
+          <input
+            id="nombre"
+            type="text"
+            placeholder="Escribí el nombre del cliente"
+            autocomplete="name"
+          />
+          <button id="preparar-pedido" type="button">Preparar pedido</button>
+        </div>
+        <p id="pedido-preparado" class="resultado" role="status">
+          Prepará la entrega con el nombre y la cantidad de combos elegida.
+        </p>
+      </section>
+
+      <footer class="pie">
+        Creá <code>ejercicios.js</code> junto a <code>index.html</code> y
+        resolvé las cuatro consignas. Guardá el archivo y recargá la página para
+        probarlo.
+      </footer>
+    </main>
+  </body>
+</html>
